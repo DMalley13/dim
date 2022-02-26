@@ -34,8 +34,7 @@ const Library = () => {
     <LibraryContext.Provider value={initialValue}>
       <div className="library">
         <MatchMedia />
-        {fetched && Object.keys(items).length > 0 && <UnmatchedCard />}
-        <Cards slip={true} />
+        <Cards />
       </div>
     </LibraryContext.Provider>
   );
